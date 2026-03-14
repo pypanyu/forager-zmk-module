@@ -2,15 +2,20 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    - name: carrefinho                            # <---
+      url-base: https://github.com/carrefinho     # <---
+    - name: caksoylar                             # <---
+      url-base: https://github.com/caksoylar      # <---
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
+    - name: forager-zmk-module                    # <---
+      remote: carrefinho                          # <---
+      revision: main                              # <---
+    - name: zmk-rgbled-widget                     # <---
+      remote: caksoylar                           # <---
+      revision: main                              # <---
   self:
     path: config
